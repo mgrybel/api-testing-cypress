@@ -1,6 +1,10 @@
 {
+  "name": "api-testing-cypress",
+  "version": "1.0.0",
+  "description": "API Testing with Cypress",
+  "author": "MG",
+  "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.12.0",
-    "cypress-plugin-api": "^2.11.1"
+    "cypress": "^13.12.0"
   }
 }
