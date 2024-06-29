@@ -39,4 +39,17 @@ describe('API Testing', () => {
       expect(response.body).to.be.jsonSchema(productsSchema);
     });
   });
+
+  it('get a single product', () => {
+    cy.request({
+      method: 'GET',
+      url: 'product/1',
+      headers: {
+        Authorization: `Bearer ${USER.accessToken}`,
+      },
+    }).then((response) => {
+      expect(response.status).to.equal(200);
+      expect(response.body).to.be.jsonSchema(productSchema);
+    });
+  });
 });
