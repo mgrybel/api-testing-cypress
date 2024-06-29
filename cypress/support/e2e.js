@@ -14,3 +14,5 @@
 // ***********************************************************
 
 import './commands';
+
+chai.use(require('chai-json-schema'));
